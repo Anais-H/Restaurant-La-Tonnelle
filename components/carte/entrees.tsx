@@ -19,7 +19,7 @@ export default function Entrees({ data }: EntreesProps) {
             <div className={styles.containerItem1}>
                 <ul className={styles.categoriesList}>
                     <li onClick={() => setCurrentData(ENTREES_CAT)}>
-                        <CarteListItem content="Nos entrées" selected={ENTREES_CAT === currentData} />
+                        <CarteListItem content="Entrées" selected={ENTREES_CAT === currentData} />
                     </li>
                 </ul>
             </div>

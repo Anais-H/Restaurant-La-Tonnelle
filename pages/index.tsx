@@ -12,6 +12,7 @@ import Image from 'next/image';
 import Header from '@/components/header';
 import { SiteSettingsType } from '@/types/siteSettings.type';
 import { HorairesType } from '@/types/horaires.type';
+import Head from 'next/head';
 
 interface HomeProps {
   boissons: BoissonsType,
@@ -27,6 +28,12 @@ export default function Home({ boissons, entrees, plats, desserts, menus, siteSe
 
   return (
     <>
+      <Head>
+        <title>Restaurant La Tonnelle</title>
+        <meta name="description" 
+        content="Restaurant La Tonnelle, cuisine créole à l'Anse Mitan, Pointe du bout, Les Trois-Ilets, Martinique. Grillades, langouste, plats mijotés, poissons, salades."/>
+      </Head>
+
       <Header bannerImageSrc={siteSettings.header_image_url} />
 
       { siteSettings.information ? <div className={styles.messageDefilantContainer}>
@@ -34,7 +41,7 @@ export default function Home({ boissons, entrees, plats, desserts, menus, siteSe
 
       <main className={styles.main}>
         <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>La carte</h2>
+          <h3 className={styles.sectionTitle}>La carte</h3>
           <CarteSection boissons={boissons} entrees={entrees} plats={plats} desserts={desserts} menus={menus} />
         </section>
 
@@ -45,7 +52,7 @@ export default function Home({ boissons, entrees, plats, desserts, menus, siteSe
             </div>
 
             <div className={styles.textContainer}>
-              <h2 className={styles.textContainerTitle}>Horaires d{'\''}ouverture et réservation</h2>
+              <h3 className={styles.textContainerTitle}>Horaires d{'\''}ouverture et réservation</h3>
               <HorairesEtReservation reservationTelNumber={siteSettings.reservation_number} horaires={horaires} />
             </div>
           </div>
@@ -54,7 +61,7 @@ export default function Home({ boissons, entrees, plats, desserts, menus, siteSe
         <section className={styles.sectionFluid}>
           <div className={styles.imageTextContainer}>
             <div className={styles.textContainer}>
-              <h2 className={styles.textContainerTitle}>Nous situer</h2>
+              <h3 className={styles.textContainerTitle}>Nous situer</h3>
               <div className={styles.textContainerContent}>
                 <div>
                   <h4>Adresse</h4>

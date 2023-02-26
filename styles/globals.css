@@ -110,6 +110,11 @@ ul {
   list-style: none;
 }
 
+h1, h2 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

@@ -1,4 +1,5 @@
 import { MenuType } from "@/types/menu.type";
+import { formatPrice } from "@/utils/format.utils";
 import { useState } from "react";
 import styles from "../../styles/carteCategory.module.css";
 import menuStyles from "../../styles/menu.module.css";
@@ -27,8 +28,8 @@ export default function Menus({ menus }: MenusProps) {
             <div className={styles.containerItem2}>
                 <div>
                     <div className={menuStyles.menuTitle}>
-                        <h3>{currentMenu.nom}</h3>
-                        {currentMenu.commentaire ? <h5>{currentMenu.commentaire}</h5> : ''}
+                        <h3>{currentMenu.nom} {formatPrice(currentMenu.prix)} €</h3>
+                        {currentMenu.commentaire ? <span>{currentMenu.commentaire}</span> : ''}
                     </div>
 
                     <div className={menuStyles.menuCategory}>

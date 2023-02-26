@@ -26,7 +26,7 @@ export default function Desserts({ data }: DessertsProps) {
         <div className={styles.container}>
             <div className={styles.containerItem1}>
                 <ul className={styles.categoriesList}>
-                    <li onClick={() => setCurrentData(DESSERTS_CATEGORY)}><CarteListItem content="Nos Desserts" selected={DESSERTS_CATEGORY === currentData} /></li>
+                    <li onClick={() => setCurrentData(DESSERTS_CATEGORY)}><CarteListItem content="Desserts" selected={DESSERTS_CATEGORY === currentData} /></li>
                 </ul>
             </div>
 

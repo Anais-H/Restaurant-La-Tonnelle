@@ -38,25 +38,25 @@ export default function Boissons({ data }: BoissonsProps) {
             <div className={styles.containerItem1}>
                 <ul className={styles.categoriesList}>
                     <li onClick={() => setCurrentData(APERITIFS_CAT)}>
-                        <CarteListItem content="Nos Apéritifs" selected={currentData === APERITIFS_CAT} />
+                        <CarteListItem content="Apéritifs" selected={currentData === APERITIFS_CAT} />
                     </li>
                     <li onClick={() => setCurrentData(COCKTAIL_ALC_CAT)}>
-                        <CarteListItem content="Nos Cocktails alcoolisés" selected={COCKTAIL_ALC_CAT === currentData} />
+                        <CarteListItem content="Cocktails alcoolisés" selected={COCKTAIL_ALC_CAT === currentData} />
                     </li>
                     <li onClick={() => setCurrentData(COCKTAIL_NON_ALC_CAT)}>
-                        <CarteListItem content="Nos Cocktails non alcoolisés" selected={COCKTAIL_NON_ALC_CAT === currentData} />
+                        <CarteListItem content="Cocktails non alcoolisés" selected={COCKTAIL_NON_ALC_CAT === currentData} />
                     </li>
                     <li onClick={() => setCurrentData(BOISSONS_CH_CAT)}>
-                        <CarteListItem content="Nos boissons chaudes" selected={BOISSONS_CH_CAT === currentData} />
+                        <CarteListItem content="boissons chaudes" selected={BOISSONS_CH_CAT === currentData} />
                     </li>
                     <li onClick={() => setCurrentData(BOISSONS_FR_CAT)}>
-                        <CarteListItem content="Nos boissons fraiches" selected={BOISSONS_FR_CAT === currentData} />
+                        <CarteListItem content="Boissons fraiches" selected={BOISSONS_FR_CAT === currentData} />
                     </li>
                     <li onClick={() => setCurrentData(VINS_CAT)}>
-                        <CarteListItem content="Notre carte des Vins" selected={VINS_CAT === currentData} />
+                        <CarteListItem content="Carte des Vins" selected={VINS_CAT === currentData} />
                     </li>
                     <li onClick={() => setCurrentData(DIGESTIFS_CAT)}>
-                        <CarteListItem content="Nos Digestifs" selected={DIGESTIFS_CAT === currentData} />
+                        <CarteListItem content="Digestifs" selected={DIGESTIFS_CAT === currentData} />
                     </li>
                 </ul>
             </div>
