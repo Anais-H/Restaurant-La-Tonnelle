@@ -86,7 +86,7 @@ export default function Home({ boissons, entrees, plats, desserts, menus, siteSe
   )
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   // boissons
   const aperitifs = await client.fetch(`*[_type == "aperitif"]`);
   const boissonsFraiches = await client.fetch(`*[_type == "boisson_fraiche"]`);

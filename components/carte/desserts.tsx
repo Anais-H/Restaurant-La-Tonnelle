@@ -1,5 +1,4 @@
-import { DessertsType } from "@/types/dessert.type"
-import { formatPrice } from "@/utils/format.utils";
+import { DessertsType } from "@/types/dessert.type";
 import { useState } from "react";
 import CarteListItem from "./carteListItem";
 import styles from "../../styles/carteCategory.module.css";
