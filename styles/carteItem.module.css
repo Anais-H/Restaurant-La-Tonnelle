@@ -1,0 +1,15 @@
+.container {
+    width: 100%;
+}
+
+.mainContentContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.secondaryContent {
+    font-style: italic;
+    font-size: .8rem;
+    padding-left: 10px;
+}

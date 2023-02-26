@@ -1,0 +1,57 @@
+.headerContainer {
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContent {
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(0, 208, 255, 0.3);
+}
+
+.title, .subtitle {
+    text-align: center;
+    padding: 10px 0;
+    color: rgb(255, 255, 255);
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
+.nav {
+    padding: 5px 0;
+}
+
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+
+}
+  
+  
+/* Mobile */
+@media (max-width: 700px) {
+    .headerContent {
+        border: none;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,27 @@
+/** Tabs **/
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs > button {
+  flex: 1;
+  border: none;
+  padding: 5px;
+  font-variant: small-caps;
+  cursor: pointer;
+}
+
+.tabs > button:hover {
+  font-weight: bold;
+}
+
+.tabs > button + button {
+  border-left: solid white 1px;
+}
+
+.selected {
+  font-weight: bold;
+  color: rgb(1, 133, 133);
+}

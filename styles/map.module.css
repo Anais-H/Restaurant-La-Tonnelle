@@ -1,0 +1,7 @@
+.mapContainer {
+    display: flex;
+}
+
+.mapContainer iframe {
+    flex-grow: 1;
+}

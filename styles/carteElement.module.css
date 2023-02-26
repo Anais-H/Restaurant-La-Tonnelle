@@ -1,0 +1,10 @@
+span.item:hover:not(.selected) {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+span.item.selected {
+    font-weight: bold;
+    cursor: default;
+    color: rgb(1, 133, 87);
+}

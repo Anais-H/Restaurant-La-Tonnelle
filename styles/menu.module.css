@@ -1,0 +1,10 @@
+.menuTitle {
+    text-align: center;
+}
+.menuCategory, .menuTitle {
+    margin-bottom: 20px;
+}
+
+.menuCategoryTitle {
+    margin-bottom: 5px;
+}

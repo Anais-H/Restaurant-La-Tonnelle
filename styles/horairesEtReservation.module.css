@@ -1,0 +1,14 @@
+.content {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.dataList li + li {
+    margin-top: 5px;
+}
+
+.menuJoursList {
+    text-align: right;
+}
